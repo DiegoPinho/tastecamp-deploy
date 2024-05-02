@@ -14,7 +14,7 @@ app.use(json());
 app.use(authRouter);
 app.use(receitasRouter);
 
-const porta = process.env.PORTA || 5000;
+const porta = process.env.PORT || 5000;
 app.listen(porta, () => {
   console.log(`Servidor está rodando liso na porta ${porta}`);
 });
